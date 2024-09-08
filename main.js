@@ -4,15 +4,20 @@ var eatsPlants = false;
 var eatsAnimals = true;
 
 
-let omnivore = (!eatsPlants && eatsAnimals ? true : false);
-let carnivore = (eatsPlants && eatsAnimals ? true : false);
-let herbivore = (!eatsPlants && !eatsAnimals ? true : false);
-let undefinedtype = (eatsPlants && !eatsAnimals ? true : false);
+// let omnivore = (!eatsPlants && eatsAnimals ? true : false);
+// let carnivore = (eatsPlants && eatsAnimals ? true : false);
+// let herbivore = (!eatsPlants && !eatsAnimals ? true : false);
+// let undefinedtype = (eatsPlants && !eatsAnimals ? true : false);
 
-console.log("is it omnivore: " + omnivore);
-console.log("is it carnivore: " + carnivore);
-console.log("is it herbivore: " + herbivore);
-console.log("is it undefined: " + undefinedtype);
+// console.log("is it omnivore: " + omnivore);
+// console.log("is it carnivore: " + carnivore);
+// console.log("is it herbivore: " + herbivore);
+// console.log("is it undefined: " + undefinedtype);
+
+let animals=(eatsPlants== true & eatsAnimals==true )? 'the Anmile is omnivore':
+    (eatsPlants== false & eatsAnimals==true) ? 'the Anmile is carnivore':
+    (eatsPlants== true & eatsAnimals==false) ? 'the Anmile is herbivore':'the Anmile is undefined';
+console.log(animals);
 
 
 // Q2
