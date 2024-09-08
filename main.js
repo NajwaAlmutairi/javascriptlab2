@@ -4,15 +4,16 @@ var eatsPlants = false;
 var eatsAnimals = true;
 
 
-let omnivore = (!eatsPlants & eatsAnimals ? true : false);
-let carnivore = (eatsPlants & eatsAnimals ? true : false);
-let herbivore = (!eatsPlants & !eatsAnimals ? true : false);
-let undefinedtype = (eatsPlants & !eatsAnimals ? true : false);
+let omnivore = (!eatsPlants && eatsAnimals ? true : false);
+let carnivore = (eatsPlants && eatsAnimals ? true : false);
+let herbivore = (!eatsPlants && !eatsAnimals ? true : false);
+let undefinedtype = (eatsPlants && !eatsAnimals ? true : false);
 
 console.log("is it omnivore: " + omnivore);
 console.log("is it carnivore: " + carnivore);
 console.log("is it herbivore: " + herbivore);
 console.log("is it undefined: " + undefinedtype);
+
 
 // Q2
 
